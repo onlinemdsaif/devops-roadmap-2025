@@ -8,46 +8,102 @@
     <script src="animations.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>DevOps Roadmap 2025 🚀</h1>
-    </header>
 
-    <main>
+    <!-- Sidebar for Navigation -->
+    <div id="sidebar">
+        <h2>DevOps Roadmap</h2>
+        <ul>
+            <li><a href="#linux">Linux</a></li>
+            <li><a href="#docker">Docker</a></li>
+            <li><a href="#kubernetes">Kubernetes</a></li>
+            <li><a href="#ansible">Ansible</a></li>
+            <li><a href="#terraform">Terraform</a></li>
+            <li><a href="#ci-cd">CI/CD</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <header>
+            <h1>🚀 DevOps Roadmap 2025</h1>
+            <p>Your complete guide to mastering DevOps!</p>
+        </header>
+
+        <!-- DevOps Topics -->
         <section class="roadmap">
-            <div class="topic">
+            
+            <div class="topic" id="linux">
                 <h2>Linux 🐧</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux">
                 <div class="commands">
                     <code>ls -la</code>
                     <code>cat /etc/os-release</code>
                     <code>chmod +x script.sh</code>
                 </div>
-                <a href="https://cheatography.com/davechild/cheat-sheets/linux-command-line/" target="_blank">View Cheat Sheet</a>
+                <a href="https://cheatography.com/davechild/cheat-sheets/linux-command-line/" target="_blank">Linux Cheat Sheet</a>
             </div>
 
-            <div class="topic">
+            <div class="topic" id="docker">
                 <h2>Docker 🐳</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker">
                 <div class="commands">
                     <code>docker ps</code>
                     <code>docker images</code>
                     <code>docker run -it ubuntu bash</code>
                 </div>
-                <a href="https://dockerlabs.collabnix.com/docker/cheatsheet/" target="_blank">View Cheat Sheet</a>
+                <a href="https://dockerlabs.collabnix.com/docker/cheatsheet/" target="_blank">Docker Cheat Sheet</a>
             </div>
 
-            <div class="topic">
+            <div class="topic" id="kubernetes">
                 <h2>Kubernetes ☸️</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
                 <div class="commands">
                     <code>kubectl get pods</code>
                     <code>kubectl apply -f deployment.yaml</code>
                     <code>kubectl logs pod-name</code>
                 </div>
-                <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/" target="_blank">View Cheat Sheet</a>
+                <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/" target="_blank">Kubernetes Cheat Sheet</a>
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <p>Made by Saif | <a href="https://github.com/onlinemdsaif">GitHub</a></p>
-    </footer>
+            <div class="topic" id="ansible">
+                <h2>Ansible ⚙️</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="Ansible">
+                <div class="commands">
+                    <code>ansible --version</code>
+                    <code>ansible-playbook site.yml</code>
+                    <code>ansible all -m ping</code>
+                </div>
+                <a href="https://docs.ansible.com/ansible/latest/user_guide/cheatsheet.html" target="_blank">Ansible Cheat Sheet</a>
+            </div>
+
+            <div class="topic" id="terraform">
+                <h2>Terraform 🌍</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" alt="Terraform">
+                <div class="commands">
+                    <code>terraform init</code>
+                    <code>terraform apply</code>
+                    <code>terraform destroy</code>
+                </div>
+                <a href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started" target="_blank">Terraform Cheat Sheet</a>
+            </div>
+
+            <div class="topic" id="ci-cd">
+                <h2>CI/CD 🏗️</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png" alt="CI/CD">
+                <div class="commands">
+                    <code>git push origin main</code>
+                    <code>jenkins build</code>
+                    <code>kubectl rollout restart</code>
+                </div>
+                <a href="https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/" target="_blank">CI/CD Cheat Sheet</a>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Made by <a href="https://github.com/onlinemdsaif">Saif</a> | 2025</p>
+        </footer>
+    </div>
+
 </body>
 </html>
