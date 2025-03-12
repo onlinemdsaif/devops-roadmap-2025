@@ -2,30 +2,63 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('assets/background.jpg') no-repeat center center/cover;
+    display: flex;
+    background-color: #121212;
     color: white;
 }
 
-header {
+/* Sidebar */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #1f1f1f;
+    padding: 20px;
+    position: fixed;
+    overflow-y: auto;
+}
+
+#sidebar h2 {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    color: #0dcaf0;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 10px 0;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    background: #0dcaf0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Main Content */
+#main-content {
+    margin-left: 270px;
+    width: 80%;
     padding: 20px;
 }
 
-.roadmap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
+/* Roadmap Sections */
 .topic {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     padding: 20px;
-    margin: 10px;
-    width: 60%;
-    text-align: center;
+    margin-bottom: 20px;
     border-radius: 10px;
+    text-align: center;
+}
+
+.topic img {
+    width: 100px;
 }
 
 .commands {
@@ -39,9 +72,5 @@ header {
     background: #333;
     padding: 5px;
     border-radius: 5px;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
+    color: #0dcaf0;
 }
