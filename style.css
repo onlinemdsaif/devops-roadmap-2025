@@ -13,13 +13,12 @@ nav {
     background: #1f1f1f;
     padding: 15px;
     text-align: center;
-    position: fixed;  /* Makes navbar fixed at the top */
+    position: fixed;  /* Keeps navbar visible */
     top: 0;
     width: 100%;
-    z-index: 1000;  /* Ensures navbar stays above content */
+    z-index: 1000;  /* Ensures navbar stays on top */
 }
 
-/* Navigation Menu */
 nav ul {
     list-style: none;
     padding: 0;
@@ -45,11 +44,11 @@ nav ul li a:hover {
     background: #0bb2d4;
 }
 
-/* Adjust content so it's not hidden behind the navbar */
+/* Prevent navbar overlap */
 #main-content {
     width: 90%;
     margin: auto;
-    padding: 80px 20px 20px; /* Top padding to prevent overlap with navbar */
+    padding: 100px 20px 20px; /* Increased top padding */
 }
 
 /* DevOps Topics */
@@ -65,12 +64,12 @@ nav ul li a:hover {
 .topic img {
     width: 120px;
     height: auto;
-    max-height: 120px; /* Ensures proper fit */
+    max-height: 120px;
     transition: transform 0.3s ease;
 }
 
 .topic img:hover {
-    transform: scale(1.1); /* Adds a hover effect */
+    transform: scale(1.1);
 }
 
 /* Commands Section */
@@ -88,7 +87,7 @@ nav ul li a:hover {
     border-radius: 5px;
     color: #0dcaf0;
     font-size: 14px;
-    white-space: pre-wrap; /* Ensures proper formatting */
+    white-space: pre-wrap;
     display: block;
 }
 
