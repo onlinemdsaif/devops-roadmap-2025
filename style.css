@@ -55,6 +55,7 @@ nav ul li a:hover {
     border-radius: 10px;
     text-align: center;
     border: 2px solid #0dcaf0;
+    color: #ffffff; /* Adjust text color for better visibility */
 }
 
 .box img {
