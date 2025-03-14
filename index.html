@@ -10,6 +10,7 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #f8f9fa;
         }
 
         /* Navigation Bar */
@@ -41,28 +42,42 @@
         }
 
         .topic {
-            background: #f4f4f4;
+            background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
+        /* Logo Styling */
         .topic img {
             width: 100px; /* Fixed logo size */
             height: auto;
-            margin-bottom: 10px;
+            background: #ffffff; /* White background to fix visibility */
+            padding: 10px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        /* Buttons Side by Side */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
         }
 
         .cheat-sheet, .notes {
-            display: block;
-            margin: 10px auto;
             padding: 8px 15px;
             background-color: #007bff;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 14px;
         }
 
+        /* Arrow Styling */
         .arrow {
             font-size: 20px;
             margin-top: 10px;
@@ -89,8 +104,10 @@
         <section id="linux" class="topic">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Linux_Logo_in_Linux_Libertine_Font.svg" alt="Linux Logo">
             <h2>Linux</h2>
-            <a class="cheat-sheet" href="https://cheatography.com/davechild/cheat-sheets/linux-command-line/" target="_blank">Linux Cheat Sheet</a>
-            <a class="notes" href="notes/linux_notes.docx" target="_blank">Download Notes</a>
+            <div class="button-container">
+                <a class="cheat-sheet" href="https://cheatography.com/davechild/cheat-sheets/linux-command-line/" target="_blank">Cheat Sheet</a>
+                <a class="notes" href="notes/linux_notes.docx" target="_blank">Download Notes</a>
+            </div>
             <div class="arrow">↓</div>
         </section>
 
@@ -98,8 +115,10 @@
         <section id="docker" class="topic">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker Logo">
             <h2>Docker</h2>
-            <a class="cheat-sheet" href="https://dockerlabs.collabnix.com/docker/cheatsheet/" target="_blank">Docker Cheat Sheet</a>
-            <a class="notes" href="notes/docker_notes.docx" target="_blank">Download Notes</a>
+            <div class="button-container">
+                <a class="cheat-sheet" href="https://dockerlabs.collabnix.com/docker/cheatsheet/" target="_blank">Cheat Sheet</a>
+                <a class="notes" href="notes/docker_notes.docx" target="_blank">Download Notes</a>
+            </div>
             <div class="arrow">↓</div>
         </section>
 
@@ -107,8 +126,10 @@
         <section id="kubernetes" class="topic">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo">
             <h2>Kubernetes</h2>
-            <a class="cheat-sheet" href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/" target="_blank">Kubernetes Cheat Sheet</a>
-            <a class="notes" href="notes/kubernetes_notes.docx" target="_blank">Download Notes</a>
+            <div class="button-container">
+                <a class="cheat-sheet" href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/" target="_blank">Cheat Sheet</a>
+                <a class="notes" href="notes/kubernetes_notes.docx" target="_blank">Download Notes</a>
+            </div>
             <div class="arrow">↓</div>
         </section>
 
@@ -116,8 +137,10 @@
         <section id="ansible" class="topic">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="Ansible Logo">
             <h2>Ansible</h2>
-            <a class="cheat-sheet" href="https://docs.ansible.com/ansible/latest/user_guide/cheat_sheet.html" target="_blank">Ansible Cheat Sheet</a>
-            <a class="notes" href="notes/ansible_notes.docx" target="_blank">Download Notes</a>
+            <div class="button-container">
+                <a class="cheat-sheet" href="https://docs.ansible.com/ansible/latest/user_guide/cheat_sheet.html" target="_blank">Cheat Sheet</a>
+                <a class="notes" href="notes/ansible_notes.docx" target="_blank">Download Notes</a>
+            </div>
             <div class="arrow">↓</div>
         </section>
 
@@ -125,22 +148,26 @@
         <section id="terraform" class="topic">
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" alt="Terraform Logo">
             <h2>Terraform</h2>
-            <a class="cheat-sheet" href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-provider" target="_blank">Terraform Cheat Sheet</a>
-            <a class="notes" href="notes/terraform_notes.docx" target="_blank">Download Notes</a>
+            <div class="button-container">
+                <a class="cheat-sheet" href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-provider" target="_blank">Cheat Sheet</a>
+                <a class="notes" href="notes/terraform_notes.docx" target="_blank">Download Notes</a>
+            </div>
             <div class="arrow">↓</div>
         </section>
 
         <!-- CI/CD Section -->
         <section id="cicd" class="topic">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Continuous_Delivery-pipeline.svg/120px-Continuous_Delivery-pipeline.svg.png" alt="CI/CD Logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/CICD-pipeline-icon.svg/120px-CICD-pipeline-icon.svg.png" alt="CI/CD Logo">
             <h2>CI/CD</h2>
-            <a class="cheat-sheet" href="https://cheatography.com/eshlox/cheat-sheets/ci-cd/" target="_blank">CI/CD Cheat Sheet</a>
-            <a class="notes" href="notes/cicd_notes.docx" target="_blank">Download Notes</a>
+            <div class="button-container">
+                <a class="cheat-sheet" href="https://cheatography.com/eshlox/cheat-sheets/ci-cd/" target="_blank">Cheat Sheet</a>
+                <a class="notes" href="notes/cicd_notes.docx" target="_blank">Download Notes</a>
+            </div>
         </section>
     </div>
 
     <footer>
-        <p>© 2025 DevOps Roadmap. All rights reserved.</p>
+        <p>© 2025 DevOps Roadmap. All rights reserved. Created by Saif.</p>
     </footer>
 
 </body>
