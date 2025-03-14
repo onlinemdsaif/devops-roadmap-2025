@@ -5,6 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Roadmap 2025</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Topic Grid */
+        #main-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .topic {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic img {
+            width: 100px; /* Fixed logo size */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .cheat-sheet, .notes {
+            display: block;
+            margin: 10px auto;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .arrow {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -25,13 +89,6 @@
         <section id="linux" class="topic">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Linux_Logo_in_Linux_Libertine_Font.svg" alt="Linux Logo">
             <h2>Linux</h2>
-            <p>Understand the basics of Linux, command line navigation, and scripting.</p>
-            <div class="commands">
-                <code>ls -l</code>
-                <code>cd /home</code>
-                <code>cat file.txt</code>
-                <code>chmod +x script.sh</code>
-            </div>
             <a class="cheat-sheet" href="https://cheatography.com/davechild/cheat-sheets/linux-command-line/" target="_blank">Linux Cheat Sheet</a>
             <a class="notes" href="notes/linux_notes.docx" target="_blank">Download Notes</a>
             <div class="arrow">↓</div>
@@ -41,13 +98,6 @@
         <section id="docker" class="topic">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker Logo">
             <h2>Docker</h2>
-            <p>Learn how to containerize applications using Docker.</p>
-            <div class="commands">
-                <code>docker ps</code>
-                <code>docker images</code>
-                <code>docker run -it ubuntu</code>
-                <code>docker-compose up -d</code>
-            </div>
             <a class="cheat-sheet" href="https://dockerlabs.collabnix.com/docker/cheatsheet/" target="_blank">Docker Cheat Sheet</a>
             <a class="notes" href="notes/docker_notes.docx" target="_blank">Download Notes</a>
             <div class="arrow">↓</div>
@@ -57,12 +107,6 @@
         <section id="kubernetes" class="topic">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo">
             <h2>Kubernetes</h2>
-            <p>Manage containerized applications at scale using Kubernetes.</p>
-            <div class="commands">
-                <code>kubectl get pods</code>
-                <code>kubectl apply -f deployment.yaml</code>
-                <code>kubectl delete service my-service</code>
-            </div>
             <a class="cheat-sheet" href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/" target="_blank">Kubernetes Cheat Sheet</a>
             <a class="notes" href="notes/kubernetes_notes.docx" target="_blank">Download Notes</a>
             <div class="arrow">↓</div>
@@ -72,12 +116,6 @@
         <section id="ansible" class="topic">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="Ansible Logo">
             <h2>Ansible</h2>
-            <p>Automate configuration management using Ansible.</p>
-            <div class="commands">
-                <code>ansible-playbook playbook.yml</code>
-                <code>ansible all -m ping</code>
-                <code>ansible-galaxy install role_name</code>
-            </div>
             <a class="cheat-sheet" href="https://docs.ansible.com/ansible/latest/user_guide/cheat_sheet.html" target="_blank">Ansible Cheat Sheet</a>
             <a class="notes" href="notes/ansible_notes.docx" target="_blank">Download Notes</a>
             <div class="arrow">↓</div>
@@ -87,13 +125,6 @@
         <section id="terraform" class="topic">
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" alt="Terraform Logo">
             <h2>Terraform</h2>
-            <p>Use infrastructure as code to manage cloud resources.</p>
-            <div class="commands">
-                <code>terraform init</code>
-                <code>terraform plan</code>
-                <code>terraform apply</code>
-                <code>terraform destroy</code>
-            </div>
             <a class="cheat-sheet" href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-provider" target="_blank">Terraform Cheat Sheet</a>
             <a class="notes" href="notes/terraform_notes.docx" target="_blank">Download Notes</a>
             <div class="arrow">↓</div>
@@ -101,19 +132,11 @@
 
         <!-- CI/CD Section -->
         <section id="cicd" class="topic">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Continuous_Delivery.svg" alt="CI/CD Logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Continuous_Delivery-pipeline.svg/120px-Continuous_Delivery-pipeline.svg.png" alt="CI/CD Logo">
             <h2>CI/CD</h2>
-            <p>Implement continuous integration and continuous delivery pipelines.</p>
-            <div class="commands">
-                <code>git push origin main</code>
-                <code>jenkins build job_name</code>
-                <code>docker build -t myapp .</code>
-                <code>helm install myapp ./chart</code>
-            </div>
             <a class="cheat-sheet" href="https://cheatography.com/eshlox/cheat-sheets/ci-cd/" target="_blank">CI/CD Cheat Sheet</a>
             <a class="notes" href="notes/cicd_notes.docx" target="_blank">Download Notes</a>
         </section>
-
     </div>
 
     <footer>
