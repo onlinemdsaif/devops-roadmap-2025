@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="#linux">Linux</a></li>
@@ -18,65 +20,105 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <!-- Linux -->
-        <div class="box" id="linux">
-            <img src="./assets/linux_logo.svg" alt="Linux Logo">
+    <div id="main-content">
+        <!-- Linux Section -->
+        <section id="linux" class="topic">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Linux_Logo_in_Linux_Libertine_Font.svg" alt="Linux Logo">
             <h2>Linux</h2>
-            <p>Master Linux basics and command-line usage.</p>
-            <a class="cheat-sheet" href="https://cheatography.com/davechild/cheat-sheets/linux-command-line/" target="_blank">Cheat Sheet</a>
-            <a class="notes" href="notes/linux_notes.docx" download>Download Notes</a>
+            <p>Understand the basics of Linux, command line navigation, and scripting.</p>
+            <div class="commands">
+                <code>ls -l</code>
+                <code>cd /home</code>
+                <code>cat file.txt</code>
+                <code>chmod +x script.sh</code>
+            </div>
+            <a class="cheat-sheet" href="https://cheatography.com/davechild/cheat-sheets/linux-command-line/" target="_blank">Linux Cheat Sheet</a>
+            <a class="notes" href="notes/linux_notes.docx" target="_blank">Download Notes</a>
             <div class="arrow">↓</div>
-        </div>
+        </section>
 
-        <!-- Docker -->
-        <div class="box" id="docker">
-            <img src="./assets/docker_logo.svg" alt="Docker Logo">
+        <!-- Docker Section -->
+        <section id="docker" class="topic">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker Logo">
             <h2>Docker</h2>
-            <p>Containerize your applications efficiently.</p>
-            <a class="cheat-sheet" href="https://dockerlabs.collabnix.com/docker/cheatsheet/" target="_blank">Cheat Sheet</a>
-            <a class="notes" href="notes/docker_notes.docx" download>Download Notes</a>
+            <p>Learn how to containerize applications using Docker.</p>
+            <div class="commands">
+                <code>docker ps</code>
+                <code>docker images</code>
+                <code>docker run -it ubuntu</code>
+                <code>docker-compose up -d</code>
+            </div>
+            <a class="cheat-sheet" href="https://dockerlabs.collabnix.com/docker/cheatsheet/" target="_blank">Docker Cheat Sheet</a>
+            <a class="notes" href="notes/docker_notes.docx" target="_blank">Download Notes</a>
             <div class="arrow">↓</div>
-        </div>
+        </section>
 
-        <!-- Kubernetes -->
-        <div class="box" id="kubernetes">
-            <img src="./assets/kubernetes_logo.svg" alt="Kubernetes Logo">
+        <!-- Kubernetes Section -->
+        <section id="kubernetes" class="topic">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo">
             <h2>Kubernetes</h2>
-            <p>Orchestrate your containerized apps with Kubernetes.</p>
-            <a class="cheat-sheet" href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/" target="_blank">Cheat Sheet</a>
-            <a class="notes" href="notes/kubernetes_notes.docx" download>Download Notes</a>
+            <p>Manage containerized applications at scale using Kubernetes.</p>
+            <div class="commands">
+                <code>kubectl get pods</code>
+                <code>kubectl apply -f deployment.yaml</code>
+                <code>kubectl delete service my-service</code>
+            </div>
+            <a class="cheat-sheet" href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/" target="_blank">Kubernetes Cheat Sheet</a>
+            <a class="notes" href="notes/kubernetes_notes.docx" target="_blank">Download Notes</a>
             <div class="arrow">↓</div>
-        </div>
+        </section>
 
-        <!-- Ansible -->
-        <div class="box" id="ansible">
-            <img src="./assets/ansible_logo.svg" alt="Ansible Logo">
+        <!-- Ansible Section -->
+        <section id="ansible" class="topic">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="Ansible Logo">
             <h2>Ansible</h2>
-            <p>Automate tasks with Ansible configurations.</p>
-            <a class="cheat-sheet" href="https://cheatography.com/benoitj/cheat-sheets/ansible/" target="_blank">Cheat Sheet</a>
-            <a class="notes" href="notes/ansible_notes.docx" download>Download Notes</a>
+            <p>Automate configuration management using Ansible.</p>
+            <div class="commands">
+                <code>ansible-playbook playbook.yml</code>
+                <code>ansible all -m ping</code>
+                <code>ansible-galaxy install role_name</code>
+            </div>
+            <a class="cheat-sheet" href="https://docs.ansible.com/ansible/latest/user_guide/cheat_sheet.html" target="_blank">Ansible Cheat Sheet</a>
+            <a class="notes" href="notes/ansible_notes.docx" target="_blank">Download Notes</a>
             <div class="arrow">↓</div>
-        </div>
+        </section>
 
-        <!-- Terraform -->
-        <div class="box" id="terraform">
-            <img src="./assets/terraform_logo.svg" alt="Terraform Logo">
+        <!-- Terraform Section -->
+        <section id="terraform" class="topic">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" alt="Terraform Logo">
             <h2>Terraform</h2>
-            <p>Manage infrastructure as code using Terraform.</p>
-            <a class="cheat-sheet" href="https://cheatography.com/njoyard/cheat-sheets/terraform/" target="_blank">Cheat Sheet</a>
-            <a class="notes" href="notes/terraform_notes.docx" download>Download Notes</a>
+            <p>Use infrastructure as code to manage cloud resources.</p>
+            <div class="commands">
+                <code>terraform init</code>
+                <code>terraform plan</code>
+                <code>terraform apply</code>
+                <code>terraform destroy</code>
+            </div>
+            <a class="cheat-sheet" href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-provider" target="_blank">Terraform Cheat Sheet</a>
+            <a class="notes" href="notes/terraform_notes.docx" target="_blank">Download Notes</a>
             <div class="arrow">↓</div>
-        </div>
+        </section>
 
-        <!-- CI/CD -->
-        <div class="box" id="cicd">
-            <img src="./assets/cicd_logo.svg" alt="CI/CD Logo">
+        <!-- CI/CD Section -->
+        <section id="cicd" class="topic">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Continuous_Delivery.svg" alt="CI/CD Logo">
             <h2>CI/CD</h2>
-            <p>Implement Continuous Integration and Delivery pipelines.</p>
-            <a class="cheat-sheet" href="https://cheatography.com/mvuksano/cheat-sheets/ci-cd/" target="_blank">Cheat Sheet</a>
-            <a class="notes" href="notes/cicd_notes.docx" download>Download Notes</a>
-        </div>
+            <p>Implement continuous integration and continuous delivery pipelines.</p>
+            <div class="commands">
+                <code>git push origin main</code>
+                <code>jenkins build job_name</code>
+                <code>docker build -t myapp .</code>
+                <code>helm install myapp ./chart</code>
+            </div>
+            <a class="cheat-sheet" href="https://cheatography.com/eshlox/cheat-sheets/ci-cd/" target="_blank">CI/CD Cheat Sheet</a>
+            <a class="notes" href="notes/cicd_notes.docx" target="_blank">Download Notes</a>
+        </section>
+
     </div>
+
+    <footer>
+        <p>© 2025 DevOps Roadmap. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
