@@ -5,6 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Roadmap 2025</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .topic-box {
+            border: 2px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+        .topic-box img {
+            width: 60px;
+            height: 60px;
+        }
+        .cheat-sheet, .notes {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            text-align: center;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .arrow {
+            font-size: 24px;
+            color: #007BFF;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,50 +81,53 @@
         </ul>
     </nav>
 
-    <div id="main-content">
-
-        <!-- Linux Section -->
-        <section id="linux" class="topic">
+    <div class="container">
+        <div class="topic-box" id="linux">
+            <img src="icons/linux.png" alt="Linux">
             <h2>Linux</h2>
-            <a class="cheat-sheet" href="https://cheatography.com/davechild/cheat-sheets/linux-command-line/" target="_blank">Linux Cheat Sheet</a>
-            <a class="notes" href="notes/linux_notes.docx" download>Download Notes</a>
-        </section>
+            <a class="cheat-sheet" href="#">Linux Cheat Sheet</a>
+            <a class="notes" href="#">Download Notes</a>
+            <div class="arrow">↓</div>
+        </div>
 
-        <!-- Docker Section -->
-        <section id="docker" class="topic">
+        <div class="topic-box" id="docker">
+            <img src="icons/docker.png" alt="Docker">
             <h2>Docker</h2>
-            <a class="cheat-sheet" href="https://dockerlabs.collabnix.com/docker/cheatsheet/" target="_blank">Docker Cheat Sheet</a>
-            <a class="notes" href="notes/docker_notes.docx" download>Download Notes</a>
-        </section>
+            <a class="cheat-sheet" href="#">Docker Cheat Sheet</a>
+            <a class="notes" href="#">Download Notes</a>
+            <div class="arrow">↓</div>
+        </div>
 
-        <!-- Kubernetes Section -->
-        <section id="kubernetes" class="topic">
+        <div class="topic-box" id="kubernetes">
+            <img src="icons/kubernetes.png" alt="Kubernetes">
             <h2>Kubernetes</h2>
-            <a class="cheat-sheet" href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/" target="_blank">Kubernetes Cheat Sheet</a>
-            <a class="notes" href="notes/kubernetes_notes.docx" download>Download Notes</a>
-        </section>
+            <a class="cheat-sheet" href="#">Kubernetes Cheat Sheet</a>
+            <a class="notes" href="#">Download Notes</a>
+            <div class="arrow">↓</div>
+        </div>
 
-        <!-- Ansible Section -->
-        <section id="ansible" class="topic">
+        <div class="topic-box" id="ansible">
+            <img src="icons/ansible.png" alt="Ansible">
             <h2>Ansible</h2>
-            <a class="cheat-sheet" href="https://www.ansible.com/resources/cheatsheet" target="_blank">Ansible Cheat Sheet</a>
-            <a class="notes" href="notes/ansible_notes.docx" download>Download Notes</a>
-        </section>
+            <a class="cheat-sheet" href="#">Ansible Cheat Sheet</a>
+            <a class="notes" href="#">Download Notes</a>
+            <div class="arrow">↓</div>
+        </div>
 
-        <!-- Terraform Section -->
-        <section id="terraform" class="topic">
+        <div class="topic-box" id="terraform">
+            <img src="icons/terraform.png" alt="Terraform">
             <h2>Terraform</h2>
-            <a class="cheat-sheet" href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started/cheat-sheet" target="_blank">Terraform Cheat Sheet</a>
-            <a class="notes" href="notes/terraform_notes.docx" download>Download Notes</a>
-        </section>
+            <a class="cheat-sheet" href="#">Terraform Cheat Sheet</a>
+            <a class="notes" href="#">Download Notes</a>
+            <div class="arrow">↓</div>
+        </div>
 
-        <!-- CI/CD Section -->
-        <section id="cicd" class="topic">
+        <div class="topic-box" id="cicd">
+            <img src="icons/cicd.png" alt="CI/CD">
             <h2>CI/CD</h2>
-            <a class="cheat-sheet" href="https://cheatography.com/deeprkr/cheat-sheets/continuous-integration-and-deployment/" target="_blank">CI/CD Cheat Sheet</a>
-            <a class="notes" href="notes/cicd_notes.docx" download>Download Notes</a>
-        </section>
-
+            <a class="cheat-sheet" href="#">CI/CD Cheat Sheet</a>
+            <a class="notes" href="#">Download Notes</a>
+        </div>
     </div>
 
 </body>
