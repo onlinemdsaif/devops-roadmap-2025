@@ -5,85 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Roadmap 2025</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Basic Styling */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f8f9fa;
-        }
-
-        /* Navigation Bar */
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            background-color: #333;
-            overflow: hidden;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            padding: 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        /* Topic Grid */
-        #main-content {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .topic {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        /* Logo Styling */
-        .topic img {
-            width: 100px; /* Fixed logo size */
-            height: auto;
-            background: #ffffff; /* White background to fix visibility */
-            padding: 10px;
-            border-radius: 10px;
-            display: block;
-            margin: 0 auto 10px;
-        }
-
-        /* Buttons Side by Side */
-        .button-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .cheat-sheet, .notes {
-            padding: 8px 15px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        /* Arrow Styling */
-        .arrow {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-
-    </style>
 </head>
 <body>
 
@@ -99,9 +20,9 @@
         </ul>
     </nav>
 
-    <div id="main-content">
+    <div class="container">
         <!-- Linux Section -->
-        <section id="linux" class="topic">
+        <section id="linux" class="box">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Linux_Logo_in_Linux_Libertine_Font.svg" alt="Linux Logo">
             <h2>Linux</h2>
             <div class="button-container">
@@ -112,7 +33,7 @@
         </section>
 
         <!-- Docker Section -->
-        <section id="docker" class="topic">
+        <section id="docker" class="box">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker Logo">
             <h2>Docker</h2>
             <div class="button-container">
@@ -123,7 +44,7 @@
         </section>
 
         <!-- Kubernetes Section -->
-        <section id="kubernetes" class="topic">
+        <section id="kubernetes" class="box">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo">
             <h2>Kubernetes</h2>
             <div class="button-container">
@@ -134,7 +55,7 @@
         </section>
 
         <!-- Ansible Section -->
-        <section id="ansible" class="topic">
+        <section id="ansible" class="box">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" alt="Ansible Logo">
             <h2>Ansible</h2>
             <div class="button-container">
@@ -145,7 +66,7 @@
         </section>
 
         <!-- Terraform Section -->
-        <section id="terraform" class="topic">
+        <section id="terraform" class="box">
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" alt="Terraform Logo">
             <h2>Terraform</h2>
             <div class="button-container">
@@ -156,7 +77,7 @@
         </section>
 
         <!-- CI/CD Section -->
-        <section id="cicd" class="topic">
+        <section id="cicd" class="box">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/CICD-pipeline-icon.svg/120px-CICD-pipeline-icon.svg.png" alt="CI/CD Logo">
             <h2>CI/CD</h2>
             <div class="button-container">
